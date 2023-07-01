@@ -1,1 +1,240 @@
-/* место для вашего кода */
+/* Оформление шапки */
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    margin: 50px 49px 0 51px;
+    padding: 92px 0 92px 0;
+    
+
+}
+
+/* Оформление меню */
+.header__links-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 388px;
+    margin: 40px 0 40px 0;
+    gap: 13px;
+}
+
+.header__links-list-item {
+    font-size: 18px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__links-list-item {
+    list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+/* Оформление логотипа */
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header__logo-image {
+    width: 145px;
+}
+
+/* Оформление адрессов */
+.address {
+    font-size: 18px;
+font-family: 'Raleway';
+font-style: normal;
+    font-weight: 400;
+
+    justify-self: end;
+}
+
+/* Оформление заголовка в секции с оверлеем*/
+
+.cover__title {
+    display: grid;
+    grid-template-rows: (3, 1fr);
+    font-size: 100px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    gap: 20px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+    
+   
+}
+
+.aligned-text_center {
+    justify-self: center;
+}
+
+.aligned-text_right {
+    justify-self: end;
+}
+
+.overlay {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background:  rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 70px;
+}
+
+/* Стилизуем всю секцию */
+
+.cover {
+    
+    background: #fff url(/images/cover.jpg) center center/cover no-repeat border-box;
+    padding: 165px 50px 80px 50px;
+    position: relative;
+}
+
+/* Оформление подзаголовка в секции с оверлеем */
+
+.cover__description {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    z-index: 2;
+    position: relative;
+    gap: 110px;
+    margin-top: 147px;
+
+}
+
+.cover__description-text {
+    color: #FFF;
+    justify-self: end;
+    align-self: center;
+    font-size: 22px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    word-spacing: 30px;
+}
+
+.bet-button {
+    justify-self: center;
+    align-self: center;
+    padding: 15px 20px 15px 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+/* Оформление секции с лотами */
+
+.lots {
+    padding: 200px 50px 200px 50px;
+    display: grid;
+    grid-template-rows: (3, 1fr 3fr 1fr);
+    gap: 20px;
+}
+
+/* Оформление загаловка лотов */
+
+.lots__heading {
+    color: #000;
+    font-size: 40px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-bottom: 27px;
+}
+
+/* Оформление секции с карточками */
+
+.lots__card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+}
+
+.lots__card-list-item {
+    width: 430px;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.card-link {
+    text-decoration: none;
+    position: relative;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 202px;
+    padding: 50px 40px;
+   
+}
+
+.card__title {
+    color: #FFF;
+    font-size: 22px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+
+
+.card__text {
+    color: #FFF;
+    font-size: 20px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    
+}
+
+.card_type_film {
+    background: #fff url(/images/card-lot-01.jpg) center center/cover no-repeat;
+}
+
+.card__title,.card__text {
+    z-index: 1;
+}
+
+.lots__look-more-link {
+    padding-left: 40px;
+}
