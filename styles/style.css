@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 /* Оформление шапки */
 .header {
     display: grid;
@@ -206,15 +201,12 @@ font-style: normal;
 /* Общие стили карточек */
 
 .card {
-    display: flex;
-    flex-direction: column;
-    gap: 202px;
     padding: 50px 40px;
    
 }
 
 .card__title {
-    color: #FFF;
+    color: #ffffff;
     font-size: 22px;
     font-family: Raleway;
     font-style: normal;
@@ -244,5 +236,114 @@ font-style: normal;
 
 .card_type_film {
     background: #fff url(/images/card-lot-01.jpg) center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 202px;
 }
 
+.card_type_book {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #fff url(/images/card-lot-02.jpg) center center/cover no-repeat;
+}
+
+.card_type_picture {
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
+    background: #fff url(/images/card-lot-03.jpg) center center/cover no-repeat;
+}
+
+/* Секция об аукционе */
+
+.about__lots {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    margin: 0 0 0 50px;
+    margin-right: 0;
+    width: 1340px;
+    height: 487px;
+    justify-content: space-between;
+}
+
+/* Оформление лого в секции об аукционах */
+
+.background-logo {
+    justify-self: center;
+    width: 240px;
+    height: 240px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    border-radius: 240px;
+    padding: 63px 46px;
+}
+
+.about__lots-img {
+    width: 148px;
+    height: 114px;
+}
+
+/* Оформление загаловка и подзагаловка */
+
+.about__lots-title {
+    color: #000;
+    font-size: 40px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about__lots__title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-self: center;
+    justify-self: end;
+}
+
+.about__lots__title-text-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Оформление футера */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 180px 50px 90px 50px;
+}
+
+/* Оформление ссылок */
+
+.footer__menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Оформление ссылок с подчеркиванием */
+
+.footer__menu-link {
+    text-decoration: underline;
+}
+
+/* Оформление списка социальных сетей */
+
+.footer__social-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    width: 240px;
+    height: 48px;
+}
