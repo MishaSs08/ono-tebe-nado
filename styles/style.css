@@ -24,11 +24,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-.header__links-list-item {
     list-style: circle;
 }
+
 
 .header__links-list-item_no-bullit {
     list-style: none;
