@@ -162,7 +162,7 @@ font-style: normal;
     gap: 20px;
 }
 
-/* Оформление загаловка лотов */
+/* Оформление загаловка и ссылки подробнее лотов */
 
 .lots__heading {
     color: #000;
@@ -174,6 +174,10 @@ font-style: normal;
     text-transform: uppercase;
     padding-left: 40px;
     padding-bottom: 27px;
+}
+
+.lots__look-more-link {
+    padding-left: 40px;
 }
 
 /* Оформление секции с карточками */
@@ -195,6 +199,8 @@ font-style: normal;
     position: relative;
     
 }
+
+/* Общие стили карточек */
 
 .card {
     display: flex;
@@ -227,14 +233,13 @@ font-style: normal;
     
 }
 
-.card_type_film {
-    background: #fff url(/images/card-lot-01.jpg) center center/cover no-repeat;
-}
-
 .card__title,.card__text {
     z-index: 1;
 }
 
-.lots__look-more-link {
-    padding-left: 40px;
+/* Уникальные стили карточек */
+
+.card_type_film {
+    background: #fff url(/images/card-lot-01.jpg) center center/cover no-repeat;
 }
+
