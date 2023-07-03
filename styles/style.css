@@ -130,7 +130,7 @@
 
 .cover {
     
-    background: #fff url(/images/cover.jpg) center center/cover no-repeat border-box;
+    background: #fff url(../images/cover.jpg) center center/cover no-repeat border-box;
     padding: 160px 5px 52px 50px;
     position: relative;
     
@@ -276,19 +276,19 @@
 /* Уникальные стили карточек */
 
 .card_type_film {
-    background: #fff url(/images/card-lot-01.jpg) center center/cover no-repeat;
+    background: #fff url(../images/card-lot-01.jpg) center center/cover no-repeat;
     
     
 }
 
 .card_type_book {
     
-    background: #fff url(/images/card-lot-02.jpg) center center/cover no-repeat;
+    background: #fff url(../images/card-lot-02.jpg) center center/cover no-repeat;
 }
 
 .card_type_picture {
     
-    background: #fff url(/images/card-lot-03.jpg) center center/cover no-repeat;
+    background: #fff url(../images/card-lot-03.jpg) center center/cover no-repeat;
 }
 
 /* Секция об аукционе */
@@ -387,6 +387,10 @@ padding-right: 30px;
 
 .footer__menu-link {
     text-decoration: underline;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
 }
 
 /* Оформление списка социальных сетей */
