@@ -139,7 +139,7 @@
 
 .cover__description {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     justify-content: end;
     z-index: 2;
     position: relative;
@@ -178,7 +178,7 @@
     text-transform: uppercase;
     background: transparent;
     border: 1px solid #fff;
-    cursor: pointer
+    cursor: pointer;
 }
 
 /* Оформление секции с лотами */
@@ -222,7 +222,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    gap: 27px;
+    gap: 10px;
 }
 
 .lots__card-list-item {
@@ -259,6 +259,8 @@
     line-height: 120%;
     text-decoration-line: underline;
     text-transform: uppercase;
+    display: flex;
+    
 }
 
 
@@ -349,6 +351,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 103px;
 }
 
 .about__lots__title-text-2 {
